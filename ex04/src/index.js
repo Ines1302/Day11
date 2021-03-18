@@ -4,7 +4,7 @@ function myMonitorsFunction(arr) {
   var newMonitorsList = [...arr];
   var monitorsList = [];
 
-  for (let i = 0; i < newMonitorsList.length; i++) {
+  for (var i = 0; i < newMonitorsList.length; i++) {
     monitorsList.push([newMonitorsList[i], i+1]);
   }
 
