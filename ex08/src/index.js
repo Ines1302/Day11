@@ -1,12 +1,14 @@
 function myMutation(arr) {
-  var string1 = arr[0];
-  var string2 = arr[1];
+  newArr1 = Array.from(arr[0]);
+  newArr2 = Array.from(arr[1]);
 
-  string1.toLowerCase();
-  string2.toLowerCase();
+  if (newArr1.contains(newArr2)){
+      return true;
+  }
+  return false;
 
-  return { string1, string2 };
+  
 }
 
-console.log(myMutation(["Hello World", "Pretty Women"]));
+console.log(myMutation(["Hello", "Women"]));
 module.exports = myMutation;

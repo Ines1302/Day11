@@ -1,6 +1,11 @@
 function splitArrayInGroups(arr, n) {
   var result = [];
-  
+  for (let i = 0; i < arr.length; i++) {
+    if (i % n == 0 && result.length < n) {
+      result.push(arr.slice(i, n + i));
+    }
+  }
+
   return result;
 }
 
